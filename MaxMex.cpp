@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main() {
@@ -7,13 +8,23 @@ int main() {
     while(tc--) {
         int size, k;
         cin >> size >> k;
-        int count = 0;
-        int num;
+        int* arr = new int[size];
         for(int i = 0; i < size; i++) {
-            cin >> num;
-            if((num + k) % 7 == 0) count++;
+            cin >> arr[i];
         }
-        cout << count << endl;
+        sort(arr, arr + size);
+        k = k - arr[0];
+        for(int i = 0; i < size; i++) {
+            
+
+        }
+
+
+
     }
+
+
+
+
     return 0;
 }

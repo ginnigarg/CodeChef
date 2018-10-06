@@ -15,22 +15,12 @@ int countOnes() {
     return count;
 }
 
-int fact(int num) {
-    int fact = 1, it = 1;
-    if(num == 0)  return 0;
-    while(it <= num) {
-        fact *= it;
-        it++;
-    }
-    return fact;
-}
-
 int main() {
     int tc;
     cin >> tc;
     while(tc--) {
         int count = countOnes();
-        count = fact(count - 1) + count;
+        count = (count * (count + 1)) / 2;
         cout << count << endl;
     }
     return 0;
