@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/TWOSTR
+
 #include <iostream>
 using namespace std;
 
@@ -19,13 +21,10 @@ int main() {
             }
         }
         if(flag == 0) {
-            cout << "No";
+            cout << "No" << endl;
         } else {
-            cout << "Yes";
+            cout << "Yes" << endl;
         }
-
     }
-
-
-
+    return 0;
 }

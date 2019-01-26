@@ -37,7 +37,7 @@ int main() {
             int query;
             cin >> query;
             int lb = lower_bound(arr, arr + n, query) - arr;
-            int ans = n - binarySearch(arr, sum, n, 0, lb, query);
+            int ans = n - binarySearch(arr, sum, n, 0, lb - 1, query);
             cout << ans << endl;
         }
     }
